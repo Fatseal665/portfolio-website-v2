@@ -14,8 +14,6 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="mailto:martineriksson999@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <i className="fa-regular fa-envelope"></i>
         </a>

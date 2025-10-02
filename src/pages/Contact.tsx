@@ -14,7 +14,11 @@ export default function Contact() {
         <h2>Kontakta mig</h2>
         <div className="container">
           <article>
-            <a href="..." target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com/in/martin-eriksson-5b0826218/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-linkedin contact-icon"></i>
             </a>
             <h2>LinkedIn</h2>
@@ -23,12 +27,11 @@ export default function Contact() {
           <article>
             <a
               href="mailto:martineriksson999@gmail.com"
-              rel="noopener noreferrer"
             >
               <i className="fa-regular fa-envelope contact-icon"></i>
             </a>
             <h2>Mail</h2>
-            <h3>Skicka mig ett mail</h3>
+            <h3>Skicka ett mail</h3>
           </article>
           <article>
             <a
