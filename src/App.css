@@ -1,17 +1,11 @@
+/* Globala inställningar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
+/* Header */
 header {
   width: 100%;
   display: flex;
@@ -21,16 +15,20 @@ header {
   background-color: #e67e22;
 }
 
-header nav a {
-  display: inline-block;
-  margin-left: 40px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+header h1 {
+  font-size: 35px;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+header nav a {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, color 0.3s ease;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 header nav a:hover {
@@ -38,51 +36,48 @@ header nav a:hover {
   color: black;
 }
 
-#hero-image {
+/* Hero-sektion */
+.hero-section {
+  position: relative;
   width: 100%;
-  height: 500px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-#hero-section h2 {
+.hero-section h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(53, 53, 53, 0.5);
+  background-color: rgba(53,53,53,0.5);
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 50px;
 }
 
-#breadtext {
-  position: static;
-  background-color: rgb(45, 45, 45);
+/* Breadtext */
+.breadtext {
+  background-color: rgb(45,45,45);
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 15px 100px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
-#breadtext h2 {
+.breadtext h2, .breadtext h3 {
   text-align: center;
-  padding-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-#breadtext h3 {
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
+/* Text och bilder */
 .text-and-image {
   display: flex;
   gap: 40px;
@@ -91,20 +86,15 @@ header nav a:hover {
   padding: 20px;
 }
 
-.text-container {
-  width: 60%;
-}
-
-.image-container {
-  width: 35%;
-  margin-left: 20px;
-}
+.text-container { width: 60%; }
+.image-container { width: 35%; margin-left: 20px; }
 
 .image-container img {
   width: 100%;
   height: auto;
 }
 
+/* Artiklar & ikoner */
 .container {
   display: flex;
   gap: 40px;
@@ -113,20 +103,14 @@ header nav a:hover {
   padding: 20px;
 }
 
-.icon {
-  font-size: 60px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.contact-icon {
+.icon, .contact-icon {
   font-size: 60px;
   color: white;
   margin-bottom: 10px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.contact-icon:hover {
+.contact-icon:hover, .icon:hover {
   transform: scale(1.1);
   color: black;
 }
@@ -138,105 +122,45 @@ article {
   flex: 1;
   max-width: 300px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
   color: white;
+  font-size: 14px;
 }
 
-article h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-article h3 {
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
+/* Footer */
 footer {
-  background: linear-gradient(180deg, rgb(30, 30, 30), rgb(18, 18, 18));
+  background: linear-gradient(180deg, rgb(30,30,30), rgb(18,18,18));
   min-height: 8vh;
   display: flex;
-  justify-content: space-between; /* Sprider ut text och ikoner snyggt */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ddd; /* Lite mjukare än kritvitt */
+  color: #ddd;
   font-size: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 .footer-icons a {
   margin-left: 15px;
   color: #ddd;
   font-size: 20px;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-icons a:hover {
-  color: #e07b20; /* mörkare orange accent */
+  color: #e07b20;
   transform: scale(1.2);
 }
 
-
-
-/* Media query för mobiler */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 28px;
-    gap: 2px;
-  }
-
-  header nav a {
-    white-space: nowrap;
-    margin-left: 1px;
-    font-size: 18px;
-    overflow: hidden;
-  }
-
-  #hero-section h2 {
-    font-size: 35px;
-    white-space: nowrap;
-    text-align: center;
-    padding: 8px 12px;
-    max-width: 90%;
-    overflow: hidden;
-  }
-
-  #breadtext {
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .text-and-image {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .icon {
-    font-size: 48px;
-  }
-
-  article {
-    padding: 15px;
-    max-width: 100%;
-  }
-
-  article h2 {
-    font-size: 18px;
-  }
-
-  article h3 {
-    font-size: 14px;
-  }
-
-  footer {
-    font-size: 12px;
-  }
+/* Media Queries */
+@media (max-width:768px) {
+  header h1 { font-size: 28px; }
+  header nav a { font-size: 18px; margin-left: 5px; }
+  .hero-section h2 { font-size: 35px; padding: 8px 12px; max-width: 90%; }
+  .breadtext { font-size: 16px; padding: 15px 20px; }
+  .text-and-image { flex-direction: column; gap: 10px; }
+  .icon, .contact-icon { font-size: 48px; }
+  article { max-width: 100%; padding: 15px; }
+  article h2 { font-size: 18px; }
+  article h3 { font-size: 14px; }
+  footer { font-size: 12px; }
 }

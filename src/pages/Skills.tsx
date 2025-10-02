@@ -1,6 +1,4 @@
-import React from "react";
-
-const Skills: React.FC = () => {
+export default function Skills() {
   return (
     <main>
       <section className="hero-section">
@@ -17,68 +15,31 @@ const Skills: React.FC = () => {
         <div className="container">
           <article>
             <i className="fa-brands fa-java icon"></i>
-            <h2>
-              <strong>Java</strong>
-            </h2>
-            <h3>
-              Jag har goda kunskaper i Java och kan utveckla program och
-              applikationer med effektiv och strukturerad kod. Jag är bekväm med
-              objektorienterad programmering och använder Java för att lösa
-              olika tekniska problem och skapa användarvänliga lösningar.
-            </h3>
+            <h2>Java</h2>
+            <h3>Jag har goda kunskaper i Java...</h3>
           </article>
-
           <article>
             <i className="fa-solid fa-database icon"></i>
-            <h2>
-              <strong>Databashantering</strong>
-            </h2>
-            <h3>
-              Jag har erfarenhet av databashantering och har arbetat med HSQLDB
-              för att skapa och hantera databaser. Jag är bekant med att använda
-              util-klasser och DAO-klasser för att effektivt interagera med
-              databasen och utföra CRUD-operationer.
-            </h3>
+            <h2>Databashantering</h2>
+            <h3>Jag har erfarenhet av databashantering...</h3>
           </article>
-
           <article>
             <i className="fa-solid fa-laptop icon"></i>
-            <h2>
-              <strong>Webbdesign</strong>
-            </h2>
-            <h3>
-              Jag har bra kunskaper inom HTML och okej kunskaper inom CSS. Jag har ett öga för 
-              design och tycker det är kul att komma på designs till websidor.
-            </h3>
+            <h2>Webbdesign</h2>
+            <h3>Jag har bra kunskaper inom HTML och CSS...</h3>
           </article>
-
           <article>
             <i className="fa-brands fa-react icon"></i>
-            <h2>
-              <strong>React</strong>
-            </h2>
-            <h3>
-              React är det bibliotek jag har arbetat mest med när det kommer till webbutveckling. 
-              Jämfört med andra ramverk så är det React jag är bekvämast med. React Router är något jag 
-              också har erfarenhet av. Ett exempel av de webbapplikationer jag byggt i React är den här 
-              webbsidan du är inne på just nu.
-            </h3>
+            <h2>React</h2>
+            <h3>React är det bibliotek jag jobbat mest med...</h3>
           </article>
-
           <article>
-            <i className="fa-brands fa-github contact-icon"></i>            
-            <h2>
-              <strong>Github</strong>
-            </h2>
-            <h3>
-              Github är något som jag har jobbat med frekvent under utbildningen. Jag har erfarenhet utav 
-              versionshantering och branches för att nämna några egenskaper.
-            </h3>
+            <i className="fa-brands fa-github contact-icon"></i>
+            <h2>Github</h2>
+            <h3>Github är något jag har jobbat med frekvent...</h3>
           </article>
         </div>
       </section>
     </main>
   );
-};
-
-export default Skills;
+}

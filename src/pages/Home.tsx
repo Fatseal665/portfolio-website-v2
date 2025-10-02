@@ -1,6 +1,4 @@
-import React from "react";
-
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <main>
       <section className="hero-section">
@@ -11,7 +9,6 @@ const Home: React.FC = () => {
         />
         <h2>Välkommen</h2>
       </section>
-
       <section className="breadtext">
         <h2>Välkommen till min hemsida!</h2>
         <p>
@@ -34,6 +31,4 @@ const Home: React.FC = () => {
       </section>
     </main>
   );
-};
-
-export default Home;
+}

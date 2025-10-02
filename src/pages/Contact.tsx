@@ -1,6 +1,4 @@
-import React from "react";
-
-const Contact: React.FC = () => {
+export default function Contact() {
   return (
     <main>
       <section className="hero-section">
@@ -16,52 +14,35 @@ const Contact: React.FC = () => {
         <h2>Kontakta mig</h2>
         <div className="container">
           <article>
-            <a
-              href="https://linkedin.com/in/martin-eriksson-5b0826218/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-            >
+            <a href="..." target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-linkedin contact-icon"></i>
             </a>
-            <h2>
-              <strong>LinkedIn</strong>
-            </h2>
+            <h2>LinkedIn</h2>
             <h3>Kolla in min profil</h3>
           </article>
-
           <article>
             <a
               href="mailto:martineriksson999@gmail.com"
-              title="Mail"
               rel="noopener noreferrer"
             >
               <i className="fa-regular fa-envelope contact-icon"></i>
             </a>
-            <h2>
-              <strong>Mail</strong>
-            </h2>
+            <h2>Mail</h2>
             <h3>Skicka mig ett mail</h3>
           </article>
-
           <article>
             <a
               href="https://github.com/Fatseal665"
               target="_blank"
               rel="noopener noreferrer"
-              title="GitHub"
             >
               <i className="fa-brands fa-github contact-icon"></i>
             </a>
-            <h2>
-              <strong>GitHub</strong>
-            </h2>
+            <h2>GitHub</h2>
             <h3>Min kod och projekt</h3>
           </article>
         </div>
       </section>
     </main>
   );
-};
-
-export default Contact;
+}

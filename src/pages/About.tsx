@@ -1,35 +1,37 @@
-import React from "react";
 import profilBild from "../assets/images/CV-bild.jpg";
 
-const About: React.FC = () => {
+export default function About() {
   return (
     <main>
       <section className="hero-section">
         <img
-          className="hero-image"
+          id="hero-image"
           alt="Om-mig-bild"
-          src={profilBild}
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa5%2Ffa%2F22%2Fa5fa220cefe27610626fa660a0def0e2.jpg&f=1&nofb=1&ipt=a9553e79f41ce94e5e184320a23324bc8b7bf7667c9043f2383cff0460c3f7c5&ipo=images"
         />
         <h2>Om mig</h2>
       </section>
-
-      <div className="content">
-        <section className="breadtext">
-          <h2>Min bakgrund</h2>
-          <div className="text-and-image">
-            <div className="text-container">
-              <p>
+      <section className="breadtext">
+        <h2>Min bakgrund</h2>
+        <div className="text-and-image">
+          <div className="text-container">
+            <p>
                 Mitt namn är Martin och jag studerar till systemutvecklare med
                 inriktning på Java. Jag har alltid haft ett stort intresse för
                 teknik och programmering, vilket ledde mig till att välja denna
-                bana. Just nu går jag första året på programmet <i>Javautvecklare</i> på STI i Liljeholmen, och jag ser fram emot att vara färdigexaminerad år 2026. Jag brinner för att lära mig nya teknologier och tillämpa dem i praktiken, vilket gör att studierna känns både utmanande och inspirerande.
+                bana. Just nu går jag första året på programmet{" "}
+                <i>Javautvecklare</i> på STI i Liljeholmen, och jag ser fram
+                emot att vara färdigexaminerad år 2026. Jag brinner för att lära
+                mig nya teknologier och tillämpa dem i praktiken, vilket gör att
+                studierna känns både utmanande och inspirerande.
               </p>
               <p>
                 Innan jag började på STI har jag haft en del erfarenheter som
                 har format min väg till systemutveckling. Jag gick på St Eriks
                 gymnasium där jag gick det estetiska programmet med inriktning
                 musik. Efter gymnasiet fortsatte jag mina studier genom att läsa
-                separata kurser (arkeologi och historia) på Stockholms Universitet.
+                separata kurser (arkeologi och historia) på Stockholms
+                Universitet.
               </p>
               <p>
                 På fritiden tycker jag om att umgås med vänner, spela datorspel
@@ -44,16 +46,12 @@ const About: React.FC = () => {
                 Jag ser varje ny kunskap jag lär mig som ett steg närmare att
                 kunna bidra till teknikutvecklingen på riktigt.
               </p>
-            </div>
-
-            <div className="image-container">
-              <img src={profilBild} alt="Profilbild" />
-            </div>
           </div>
-        </section>
-      </div>
+          <div className="image-container">
+            <img src={profilBild} alt="Profilbild" />
+          </div>
+        </div>
+      </section>
     </main>
   );
-};
-
-export default About;
+}

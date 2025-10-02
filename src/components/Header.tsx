@@ -9,13 +9,13 @@ const Header: React.FC<HeaderProps> = ({ setPage }) => {
     <header>
       <h1>Martin Eriksson</h1>
       <nav>
-        <button onClick={() => setPage('home')}>Hem</button>
+        <a href="#home" onClick={() => setPage('home')}>Hem</a>
         <span> | </span>
-        <button onClick={() => setPage('about')}>Om mig</button>
+        <a href="#about" onClick={() => setPage('about')}>Om mig</a>
         <span> | </span>
-        <button onClick={() => setPage('skills')}>Kunskaper</button>
+        <a href="#skills" onClick={() => setPage('skills')}>Kunskaper</a>
         <span> | </span>
-        <button onClick={() => setPage('contact')}>Kontakt</button>
+        <a href="#contact" onClick={() => setPage('contact')}>Kontakt</a>
       </nav>
     </header>
   );
